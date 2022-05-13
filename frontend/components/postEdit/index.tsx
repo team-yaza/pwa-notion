@@ -1,5 +1,7 @@
+import { Container } from './style';
+
 const PostEdit: React.FC = () => {
-  return <div></div>;
+  return <Container>PostEdit</Container>;
 };
 
 export default PostEdit;

@@ -1,3 +1,7 @@
 import styled from 'styled-components';
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 24rem 1fr;
+`;

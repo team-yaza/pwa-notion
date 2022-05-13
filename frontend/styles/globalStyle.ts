@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import { reset } from 'styled-reset';
+import { media } from './theme';
 
 export const GlobalStyle = createGlobalStyle`
   ${reset}
@@ -7,22 +8,39 @@ export const GlobalStyle = createGlobalStyle`
   html,body {
     padding: 0;
     margin: 0;
-  }
-  /* html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+  }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+  html {
+    font-size: 10px;
+  }
 
-* {
-  box-sizing: border-box;
-} */
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 
+  * {
+    box-sizing: border-box;
+  } 
+
+  .pc-tablet-only {
+    display: block;
+    ${media.mobile} {
+        display: none;
+    }
+  }
+  .tablet-mobile-only{
+    display: none;
+    ${media.tablet}{
+        display:block;
+    }
+  }
+  .mobile-only {
+    display: none;
+    ${media.mobile} {
+        display: block;
+    }
+  }
 `;

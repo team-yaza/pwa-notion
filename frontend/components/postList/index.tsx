@@ -1,5 +1,7 @@
+import { Container } from './style';
+
 const PostList: React.FC = () => {
-  return <div>hi</div>;
+  return <Container>PostList</Container>;
 };
 
 export default PostList;
