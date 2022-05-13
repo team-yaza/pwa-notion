@@ -8,6 +8,7 @@ export const theme: DefaultTheme = {
     green: '#07b495',
     lightGreen: '#99ecdd',
     darkGray: '#54595d',
+    main: '#F7F6F3',
   },
   boxShadow: {
     normal: '0 3px 8px 0 rgb(0 0 0 / 10%)',
